@@ -413,8 +413,11 @@
 
   .project-item:hover .project-header h3 { color: var(--accent); }
 
+  .proj-subtitle { display: none; }
+
   @media (min-width: 640px) {
     .project-header h3 { font-size: 24px; }
+    .proj-subtitle { display: inline; }
   }
 
   .project-header .tag {
@@ -970,7 +973,7 @@
     <div class="project-item" id="item-skinsight">
       <div class="project-header" onclick="toggleProject('skinsight')">
         <span class="proj-num">02</span>
-        <h3>SkinSight</h3>
+        <h3>SkinSight<span class="proj-subtitle"> — Skin Lesion Similarity Matching</span></h3>
         <span class="tag">Computer vision</span>
         <span class="icon">⌄</span>
       </div>
@@ -995,7 +998,7 @@
     <div class="project-item" id="item-falldetection">
       <div class="project-header" onclick="toggleProject('falldetection')">
         <span class="proj-num">03</span>
-        <h3>Wrist-Worn Fall Detection System</h3>
+        <h3>FallGuard<span class="proj-subtitle"> — Wrist-Worn Fall Detection</span></h3>
         <span class="tag">Wearable devices</span>
         <span class="icon">⌄</span>
       </div>
